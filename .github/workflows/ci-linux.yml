@@ -3,6 +3,8 @@ name: Build/test on Linux
 on: [push, pull_request]
 
 jobs:
+    strategy:
+      fail-fast: false
     test:
         runs-on: ubuntu-latest
         strategy:
